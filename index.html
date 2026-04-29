@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mística 90' - Fútbol que se siente.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700;800;900&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#c6c6c6",
+                        "outline-variant": "#cfc4c5",
+                        "on-background": "#1a1c1c",
+                        "on-tertiary-fixed-variant": "#454749",
+                        "primary-fixed": "#e2e2e2",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#1a1c1d",
+                        "secondary-container": "#91c9fe",
+                        "on-tertiary-container": "#838486",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "background": "#f9f9f9",
+                        "on-primary-fixed": "#1b1b1b",
+                        "surface-dim": "#dadada",
+                        "on-secondary-container": "#0b5583",
+                        "secondary-fixed-dim": "#96ccff",
+                        "error-container": "#ffdad6",
+                        "outline": "#7e7576",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "surface-container-low": "#f3f3f4",
+                        "primary-container": "#1b1b1b",
+                        "on-primary-fixed-variant": "#474747",
+                        "surface-container": "#eeeeee",
+                        "on-secondary-fixed-variant": "#004a75",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#5e5e5e",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#cee5ff",
+                        "on-tertiary-fixed": "#1a1c1d",
+                        "on-surface-variant": "#4c4546",
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface-variant": "#e2e2e2",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#e2e2e4",
+                        "secondary": "#236391",
+                        "on-primary-container": "#848484",
+                        "tertiary-fixed-dim": "#c6c6c8",
+                        "on-surface": "#1a1c1c",
+                        "inverse-surface": "#2f3131",
+                        "tertiary": "#000000",
+                        "surface": "#f9f9f9",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-container-high": "#e8e8e8",
+                        "on-secondary-fixed": "#001d32",
+                        "on-error-container": "#93000a",
+                        "primary": "#000000"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "section-gap": "120px",
+                        "gutter": "24px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "headline-xl": ["Epilogue"],
+                        "headline-lg": ["Epilogue"],
+                        "headline-md": ["Epilogue"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["20px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-xl": ["80px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-zinc-950/70 backdrop-blur-xl border-b border-zinc-100/20 dark:border-zinc-800/50 flex justify-center items-center px-6 py-4 max-w-full">
+<h1 class="font-['Epilogue'] tracking-tighter uppercase font-bold text-2xl tracking-widest text-zinc-950 dark:text-white" style="">
+            Mística 90’
+        </h1>
+</header>
+<!-- HERO SECTION -->
+<section class="min-h-screen bg-primary flex flex-col items-center justify-center text-center px-margin-mobile md:px-gutter pt-[96px] pb-10">
+<div class="w-full max-w-[1000px] flex flex-col items-center justify-center gap-5 md:gap-8">
+<img alt="Mística 90 logo" class="w-auto max-w-[min(88vw,820px)] max-h-[46svh] md:max-h-[56vh] object-contain" src="assets/images/mistica-90-logo-4k.jpeg" style=""/>
+<p class="font-body-lg text-body-lg text-outline-variant max-w-lg px-2" style="">Las mejores camisetas, al mejor precio. Pedí la tuya.</p>
+<a class="bg-[#25D366] hover:bg-[#1ebe5d] text-white font-label-caps text-label-caps px-8 py-4 rounded-full transition-all duration-300 flex items-center justify-center gap-2" href="https://wa.me/5493513699837?text=Hola%2C%20como%20estas%3F%20Me%20intereso%20mucho%20una%20de%20las%20remeras%21" style="">
+<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.84 11.84 0 0 0 12.08 0C5.5 0 .15 5.34.15 11.91c0 2.1.55 4.16 1.6 5.97L0 24l6.27-1.64a11.9 11.9 0 0 0 5.8 1.48h.01c6.57 0 11.92-5.34 11.92-11.91 0-3.18-1.24-6.17-3.48-8.45ZM12.08 21.82h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.72.97.99-3.63-.23-.37a9.83 9.83 0 0 1-1.51-5.29c0-5.45 4.43-9.88 9.89-9.88a9.82 9.82 0 0 1 6.98 2.9 9.8 9.8 0 0 1 2.9 6.99c0 5.45-4.44 9.9-9.89 9.9Zm5.42-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47a8.9 8.9 0 0 1-1.65-2.05c-.17-.3-.02-.46.13-.61.13-.13.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.57-.49-.5-.67-.5h-.57c-.2 0-.52.08-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+                HACE TU PEDIDO ACA
+            </a>
+</div>
+</section>
+<!-- VISUAL IMPACT SECTION -->
+<section class="w-full h-[618px] bg-surface-container-low overflow-hidden relative">
+<img alt="Messi caminando en la cancha con camiseta de Argentina" class="w-full h-full object-cover object-center" data-alt="Messi walking on a football pitch wearing Argentina number 10 jersey" src="assets/images/banner-messi-cancha.jpg" style=""/>
+</section>
+<!-- PRODUCT GRID: ARGENTINA -->
+<section class="pt-section-gap pb-12 px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="text-center mb-[80px]">
+<h3 class="font-headline-lg text-headline-lg text-primary uppercase" style="">Argentina</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4" style="">Nuestra selección de campeones.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12">
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="Argentina Fan jersey" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="Argentina Fan Messi 10 jersey front and back on white background" loading="lazy" src="assets/images/argentina-fan.jpg" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary uppercase" style="">ARGENTINA FAN</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">$30.000</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2" style="">Con escudo y marca bordados</p>
+</article>
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="Argentina Suplente Fan jersey" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="Argentina Suplente Fan blue patterned jersey on white background" loading="lazy" src="assets/images/argentina-suplente-fan.jpg" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary uppercase" style="">ARGENTINA SUPLENTE FAN</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">$30.000</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2" style="">Con escudo y marca bordados</p>
+</article>
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="Argentina Fan Plus jersey" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="Argentina Fan Plus home jersey close-up on white background" loading="lazy" src="assets/images/argentina-fan-plus.webp" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary uppercase" style="">ARGENTINA FAN +</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">$39.500</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2" style="">Con escudo y marca termosellados, para una mejor calidad y duravilidad</p>
+</article>
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="Argentina Calidad Jugador jersey" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="Argentina Calidad Jugador home jersey on white background" loading="lazy" src="assets/images/argentina-calidad-jugador.jpg" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary uppercase" style="">ARGENTINA CALIDAD JUGADOR</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">$50.000</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2" style="">La mejor calidad para tu remera, importadas desde el exterior</p>
+</article>
+</div>
+</section>
+<!-- PRODUCT GRID: ACTUALES -->
+<section class="py-12 px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="text-center mb-[80px]">
+<h3 class="font-headline-lg text-headline-lg text-primary uppercase" style="">ACTUALES - $25.000</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4" style="">Los diseños de hoy, con la calidad de siempre.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-12">
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="River Plate alternativa Betano" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="River Plate purple Betano jersey on white background" loading="lazy" src="assets/images/river-alternativa-betano.jpg" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary" style="">River Plate</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">Alternativa Betano</p>
+</article>
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="River Plate titular Betano" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="River Plate white Betano jersey on white background" loading="lazy" src="assets/images/river-titular-betano.jpg" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary" style="">River Plate</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">Titular Betano</p>
+</article>
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="Boca Juniors titular Betsson" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="Boca Juniors blue and yellow Betsson jersey on white background" loading="lazy" src="assets/images/boca-titular-betsson.jpg" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary" style="">Boca Juniors</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">Titular Betsson</p>
+</article>
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="Boca Juniors Paredes visitante" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="Boca Juniors yellow Paredes 5 jersey set on white background" loading="lazy" src="assets/images/boca-paredes-visitante.jpg" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary" style="">Boca Juniors</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">Paredes 5</p>
+</article>
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="Boca Juniors alternativa rayas" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="Boca Juniors white blue and yellow striped Betsson jersey on white background" loading="lazy" src="assets/images/boca-alternativa-rayas.jpg" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary" style="">Boca Juniors</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">Alternativa Rayas</p>
+</article>
+</div>
+</section>
+<!-- PRODUCT GRID: COLECCIÓN RETRO -->
+<section class="py-12 pb-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="text-center mb-[80px]">
+<h3 class="font-headline-lg text-headline-lg text-primary uppercase" style="">COLECCION RETRO - $32.500</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4" style="">Íconos de clubes y selecciones, listos para volver a la cancha.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-12">
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="Manchester United 2008 final jersey" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="Manchester United 2008 final jersey, red AIG shirt on white background" loading="lazy" src="assets/images/manchester-united-2008.jpg" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary" style="">Manchester United</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">Final 2008</p>
+</article>
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="Manchester City Kun Agüero 16 jersey" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="Manchester City Kun Agüero 16 sky blue jersey back on white background" loading="lazy" src="assets/images/manchester-city-aguero.jpg" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary" style="">Manchester City</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">Kun Agüero 16</p>
+</article>
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="Napoli Buitoni retro jersey" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="Napoli Buitoni sky blue retro jersey on white background" loading="lazy" src="assets/images/napoli-buitoni.jpg" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary" style="">Napoli</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">Buitoni Retro</p>
+</article>
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="Real Madrid 2018 final jersey" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="Real Madrid 2018 final white jersey on white background" loading="lazy" src="assets/images/real-madrid-2018-final.jpg" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary" style="">Real Madrid</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">Final 2018</p>
+</article>
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="Brasil Ronaldo 10 jersey" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="Brasil yellow Ronaldo 10 jersey on white background" loading="lazy" src="assets/images/brasil-2002-ronaldo.jpg" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary" style="">Brasil</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">Brasil Retro</p>
+</article>
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="Barcelona Messi 10 jersey" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="Barcelona Messi 10 red and blue jersey set on white background" loading="lazy" src="assets/images/barcelona-messi-2009.jpg" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary" style="">Barcelona</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">Messi 10</p>
+</article>
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="Boca Juniors Román 10 jersey" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="Boca Juniors Román 10 blue and yellow jersey set on white background" loading="lazy" src="assets/images/boca-roman-2007.jpg" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary" style="">Boca Juniors</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">Román 10</p>
+</article>
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="Argentina Maradona 10 jersey" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="Argentina Maradona 10 blue jersey set on white background" loading="lazy" src="assets/images/argentina-maradona-1994.jpg" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary" style="">Argentina</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">Maradona 10</p>
+</article>
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4 relative">
+<img alt="AC Milan Bwin jersey" class="w-full h-full object-contain bg-white p-3 transition-transform duration-700 group-hover:scale-105" data-alt="AC Milan red and black Bwin jersey on white background" loading="lazy" src="assets/images/ac-milan-bwin.jpg" style=""/>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-primary" style="">AC Milan</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1" style="">AC Milan Retro</p>
+</article>
+</div>
+</section>
+<!-- QUALITY & DELIVERY -->
+<section class="py-section-gap bg-surface-container-lowest px-margin-mobile md:px-gutter">
+<div class="max-w-container-max mx-auto grid md:grid-cols-2 gap-[80px] md:gap-[120px]">
+<div class="flex flex-col justify-center">
+<h3 class="font-headline-md text-headline-md text-primary mb-6" style="">Calidad Aficionado.</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant" style="">Confeccionadas con una precisión inquebrantable. Cada hilo rinde homenaje a los diseños originales que definieron una era. La misma caída, el mismo peso, la misma mística.</p>
+</div>
+<div class="flex flex-col justify-center">
+<h3 class="font-headline-md text-headline-md text-primary mb-6" style="">Entregas en Córdoba.</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant" style="">Un servicio directo y personal. Coordinamos la entrega de tu pieza de historia futbolística en la ciudad de Córdoba con la máxima celeridad y cuidado.</p>
+</div>
+</div>
+</section>
+<!-- FINAL CTA -->
+<section class="py-[160px] bg-primary flex flex-col items-center justify-center text-center px-margin-mobile">
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-12" style="">Elegí la tuya.</h2>
+<a class="bg-[#25D366] hover:bg-[#1ebe5d] text-white font-label-caps text-label-caps px-10 py-5 rounded-full transition-all duration-300 flex items-center gap-3 tracking-widest" href="https://wa.me/5493513699837?text=Hola%2C%20como%20estas%3F%20Me%20intereso%20mucho%20una%20de%20las%20remeras%21" style="">
+<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.84 11.84 0 0 0 12.08 0C5.5 0 .15 5.34.15 11.91c0 2.1.55 4.16 1.6 5.97L0 24l6.27-1.64a11.9 11.9 0 0 0 5.8 1.48h.01c6.57 0 11.92-5.34 11.92-11.91 0-3.18-1.24-6.17-3.48-8.45ZM12.08 21.82h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.72.97.99-3.63-.23-.37a9.83 9.83 0 0 1-1.51-5.29c0-5.45 4.43-9.88 9.89-9.88a9.82 9.82 0 0 1 6.98 2.9 9.8 9.8 0 0 1 2.9 6.99c0 5.45-4.44 9.9-9.89 9.9Zm5.42-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47a8.9 8.9 0 0 1-1.65-2.05c-.17-.3-.02-.46.13-.61.13-.13.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.57-.49-.5-.67-.5h-.57c-.2 0-.52.08-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>Hace tu pedido aca</a>
+</section>
+<!-- FOOTER -->
+<footer class="bg-zinc-950 dark:bg-black w-full py-20 px-10 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-start gap-12 text-white dark:text-zinc-200">
+<div>
+<div class="text-lg font-bold text-white mb-4 uppercase tracking-widest font-['Epilogue']" style="">Mística 90’</div>
+<p class="font-['Epilogue'] text-xs uppercase tracking-widest text-zinc-500" style="">© 2026 Mística 90’.</p>
+</div>
+</footer>
+<!-- FLOATING WHATSAPP -->
+<a aria-label="WhatsApp" class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-[0_10px_40px_rgba(37,211,102,0.35)] hover:scale-105 hover:bg-[#1ebe5d] transition-all duration-300" href="https://wa.me/5493513699837?text=Hola%2C%20como%20estas%3F%20Me%20intereso%20mucho%20una%20de%20las%20remeras%21" style="">
+<svg aria-hidden="true" class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.84 11.84 0 0 0 12.08 0C5.5 0 .15 5.34.15 11.91c0 2.1.55 4.16 1.6 5.97L0 24l6.27-1.64a11.9 11.9 0 0 0 5.8 1.48h.01c6.57 0 11.92-5.34 11.92-11.91 0-3.18-1.24-6.17-3.48-8.45ZM12.08 21.82h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.72.97.99-3.63-.23-.37a9.83 9.83 0 0 1-1.51-5.29c0-5.45 4.43-9.88 9.89-9.88a9.82 9.82 0 0 1 6.98 2.9 9.8 9.8 0 0 1 2.9 6.99c0 5.45-4.44 9.9-9.89 9.9Zm5.42-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47a8.9 8.9 0 0 1-1.65-2.05c-.17-.3-.02-.46.13-.61.13-.13.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.57-.49-.5-.67-.5h-.57c-.2 0-.52.08-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+</a>
+</body></html>
